@@ -272,6 +272,13 @@ def main() -> None:
             pass
 
         app = Application.builder().token(token).post_init(post_init).build()
+            async def callback_debug(update, context):
+        if update.callback_query:
+            logger.info(
+                "CALLBACK_RECEIVED data=%r user=%s",
+                update.callback_query.data,
+                update.effective_user.id if update.effective_user else None,
+            )
 
     async def callback_debug(update, context):
         if update.callback_query:
