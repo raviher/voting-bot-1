@@ -813,6 +813,7 @@ def main() -> None:
                 )
         raise ApplicationHandlerStop
 
+    app.add_handler(TypeHandler(Update, callback_debug), group=-4)
     app.add_handler(TypeHandler(Update, ban_check), group=-1)
     app.add_handler(TypeHandler(Update, maintenance_check), group=-2)
     app.add_handler(TypeHandler(Update, channel_check), group=-3)
