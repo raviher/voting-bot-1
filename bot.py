@@ -271,8 +271,9 @@ def main() -> None:
         except Exception:
             pass
 
-    app = Application.builder().token(token).post_init(post_init).build()
-        async def callback_debug(update, context):
+        app = Application.builder().token(token).post_init(post_init).build()
+
+    async def callback_debug(update, context):
         if update.callback_query:
             logger.info(
                 "CALLBACK_RECEIVED data=%r user=%s",
