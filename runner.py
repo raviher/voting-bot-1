@@ -56,7 +56,7 @@ SPEED_PRESETS = {
     'normal': {'workers': 2, 'min_delay': 6.0,  'max_delay': 12.0},
     'fast':   {'workers': 3, 'min_delay': 4.0,  'max_delay': 8.0},
     'ultra':  {'workers': 4, 'min_delay': 2.0,  'max_delay': 5.0},
-    'smart':  {'workers': 8, 'min_delay': 3.0,  'max_delay': 7.0},
+    'smart':  {'workers': 10, 'min_delay': 1.0,  'max_delay': 5.0},
 }
 
 _ACCOUNT_LOCKS = {}
