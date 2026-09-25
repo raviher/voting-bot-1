@@ -23,10 +23,10 @@ logger = logging.getLogger(__name__)
 # Config
 # ---------------------------------------------------------------------------
 
-WORKERS = int(os.environ.get('RUNNER_WORKERS', '1'))
-MIN_DELAY = 12.0
-MAX_DELAY = 24.0
-ACTION_PAUSE = 6.0
+WORKERS = int(os.environ.get('RUNNER_WORKERS', '3'))
+MIN_DELAY = 4.0
+MAX_DELAY = 10.0
+ACTION_PAUSE = 3.0
 
 # These are deliberately conservative. Telegram limits are applied per
 # account and per action, so several accounts hitting the same post together
