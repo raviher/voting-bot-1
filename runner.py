@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 # ---------------------------------------------------------------------------
 
 WORKERS = int(os.environ.get('RUNNER_WORKERS', '15'))
-MIN_DELAY = 0.5.0
+MIN_DELAY = 0.5
 MAX_DELAY = 1.0
 ACTION_PAUSE = 1.0
 
