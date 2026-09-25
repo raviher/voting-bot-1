@@ -31,8 +31,8 @@ ACTION_PAUSE = 3.0
 # These are deliberately conservative. Telegram limits are applied per
 # account and per action, so several accounts hitting the same post together
 # can still look like coordinated automation.
-ACTION_DELAY_MIN = float(os.environ.get('ACTION_DELAY_MIN', '2'))
-ACTION_DELAY_MAX = float(os.environ.get('ACTION_DELAY_MAX', '4'))
+ACTION_DELAY_MIN = float(os.environ.get('ACTION_DELAY_MIN', '0.5'))
+ACTION_DELAY_MAX = float(os.environ.get('ACTION_DELAY_MAX', '1'))
 ACCOUNT_MIN_GAP_SECONDS = float(os.environ.get('ACCOUNT_MIN_GAP_SECONDS', '10'))
 MIN_ACCOUNT_COOLDOWN_SECONDS = int(
     os.environ.get('MIN_ACCOUNT_COOLDOWN_SECONDS', '300')
